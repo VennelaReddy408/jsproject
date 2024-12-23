@@ -1,0 +1,149 @@
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    background-color: whitesmoke;
+    background-size: cover;
+    background-image: url(https://img.freepik.com/free-photo/view-supplies-school_23-2148565144.jpg);
+  }
+  
+  .container {
+    background-color: lightblue;
+    box-shadow: 2px 2px 10px rgb(66, 57, 57);
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0062cc;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  /* Media Query for small devices (max-width: 424px) */
+  @media (max-width: 424px) {
+    body {
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 90%; /* Adjust width to fit mobile screens */
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 28px; /* Reduce font size for small screens */
+    }
+
+    input {
+      max-width: 100%; /* Make input fields take full width */
+    }
+
+    button {
+      width: 100%; /* Button takes full width */
+    }
+
+    #result {
+      font-size: 20px; /* Reduce font size for result */
+    }
+  }
+
+  /* Media Query for medium devices (min-width: 425px and max-width: 767px) */
+  @media (min-width: 425px) and (max-width: 767px) {
+    body {
+      padding: 15px;
+    }
+
+    .container {
+      max-width: 80%; /* Reduce container width for tablet screens */
+      margin-top: 30px;
+    }
+
+    h1 {
+      font-size: 32px; /* Adjust font size for tablet */
+    }
+
+    input {
+      max-width: 90%; /* Input fields occupy 90% of the width */
+    }
+
+    button {
+      width: 100%; /* Full-width button on medium screens */
+    }
+
+    #result {
+      font-size: 22px; /* Slightly larger font size for result */
+    }
+  }
+
+  /* Media Query for large devices (min-width: 768px and max-width: 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    body {
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 70%; /* Adjust width for tablets and small desktops */
+      margin-top: 40px;
+    }
+
+    h1 {
+      font-size: 36px; /* Use original font size for large tablets */
+    }
+
+    input {
+      max-width: 80%; /* Input fields take 80% width */
+    }
+
+    button {
+      width: 80%; /* Button width reduced to 80% */
+    }
+
+    #result {
+      font-size: 24px; /* Keep result font size the same */
+    }
+  }
